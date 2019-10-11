@@ -6,39 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="proj1.css"/>
     <script src="https://kit.fontawesome.com/413683836f.js" crossorigin="anonymous"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>Project 1</title>
-
  </head>
  <body>
      <div class="container">
             <header class="header">
                     <div class="navbar-top">
-                        <h1 class="clipboard">Clipboard</h1>
+                        <span class="clipboard">Clipboard</span>
                         
                         <span class="nav-user">
                             <!-- put image here -->
-                            <i  class="fas fa-user-circle"></i>
-                            <h3>UltraLinx</h3>
+                            <i id="user-icon" class="fas fa-user-circle"></i>
+                            <span class="spandiv">ultraLinx</span>
                             <i class="fas fa-chevron-down"></i>
                         </span>
                     </div>
                     <div class="nav-links"> 
-                            <a href="">Photos</a>
-                            <a href="">Videos</a>
-                            <a href="">Audio</a>
-                            <a href="">Notes</a>
-                            <a href="">Links</a>
+                            <a class="hov-bar-1" href="">Photos</a>
+                            <a class="hov-bar-1"href="">Videos</a>
+                            <a class="hov-bar-1"href="">Audio</a>
+                            <a class="hov-bar-1"href="">Notes</a>
+                            <a class="hov-bar-1"href="">Links</a>
                     </div>
+                    <span class="icons">
+                            <i id="box-icon" class="fas fa-th"></i>
+                            <i id="bar-icon" class="fas fa-bars"></i>
+                            <i id="search-icon" class="fas fa-search"></i>
+                    </span>
              </header>
+          
+           
 
-             <main>
+            <div class="sidebar">
+                <span class="sidebar-top">Colections</span>
+                <div class="main-bar">
+                        <ul class="sidebar-main">
+                            <li><a class="hov-bar-2"href="">Architecture</a></li>
+                            <li><a class="hov-bar-2"href="">Design</a></li>
+                            <li><a class="hov-bar-2"href="">Products</a></li>
+                            <li><a class="hov-bar-2"href="">Minimal</a></li>
+                            <li><a class="hov-bar-2"href="">Autos</a></li>
+                            <li><a class="hov-bar-2"href="">Thechnology</a></li>
+                            <li><a class="hov-bar-2"href="">Photography</a></li>
+                        </ul>
+                    </div>
+
+            </div>
+
+             <main class="masonry">
                     <a href="#" title="Post 1">
                         <article>
                             <p></p>
                             <figure>
-                                <img src="https://placehold.it/480x360" alt="image-1">
-                                <figcaption>Post 1</figcaption>
+                                <img src="https://www.digsdigs.com/photos/2014/08/a-simple-industrial-living-room-with-shabby-walls-hairpin-leg-coffee-tables-and-industrial-floor-lamps.jpg" alt="image-1">
+                                <figcaption>
+
+                                    <b>Minimal industrial lounge</b>
+
+                                    <p>Sed posuere consectetur est at lobortis. Etiam
+                                        porta sem malesuada
+                                        ___________________________
+                                        source.com
+                                    </p>
+                                </figcaption>
                             </figure>
                         </article>
                     </a>
@@ -47,8 +78,8 @@
                         <article>
                             <p></p>
                             <figure>
-                                <img src="https://placehold.it/480x340" alt="image-2">
-                                <figcaption>Post 2</figcaption>
+                                <img src="https://i.pinimg.com/564x/b7/ca/69/b7ca69da75f98f28bd8f46b5992dbe10.jpg" alt="image-2">
+                                <figcaption>via.com</figcaption>
                             </figure>
                         </article>
                     </a>
@@ -56,8 +87,10 @@
                         <article>
                             <p></p>
                             <figure>
-                                <img src="https://placehold.it/480x360" alt="image-3">
-                                <figcaption>Post 3</figcaption>
+                                <img src="https://i.pinimg.com/564x/60/3d/97/603d9786b7eeb271943cb1bf4ef8f7ec.jpg" alt="image-3">
+                                <figcaption> Nulla viitor ligula, eget lacinia odio sem nec elio cursus magna, vel scelerisque nisl consectetur et.
+
+                                    </figcaption>
                             </figure>
                         </article>
                     </a>
@@ -65,8 +98,8 @@
                         <article>
                             <p></p>
                             <figure>
-                                <img src="https://placehold.it/480x320" alt="image-4">
-                                <figcaption>Post 4</figcaption>
+                                <img src="https://www.stairporn.org/assets/cache_image/uploads/2017/12/1513185480_6e3f204bf7aab44f328dcf7a8097367f_605x0_fdf.jpg" alt="image-4">
+                                <figcaption>via.com</figcaption>
                             </figure>
                         </article>
                     </a>
@@ -74,8 +107,16 @@
                         <article>
                             <p></p>
                             <figure>
-                                <img src="https://placehold.it/480x360" alt="image-5">
-                                <figcaption>Post 5</figcaption>
+                                <img src="https://i.pinimg.com/564x/9c/57/da/9c57da0758b631b1a1582c44aace6315.jpg" alt="image-5">
+                                <figcaption><b>Concrete and glass
+
+                                        <p>Sed posuere consectetur est at lobortis. Etiam
+                                                porta sem malesuada
+                                                ___________________________
+                                                source.com
+                                            </p>
+                                </b>
+                                </figcaption>
                             </figure>
                         </article>
                     </a>
@@ -83,8 +124,8 @@
                         <article>
                             <p></p>
                             <figure>
-                                <img src="https://placehold.it/480x360" alt="image-6">
-                                <figcaption>Post 6</figcaption>
+                                <img src="https://i.pinimg.com/236x/49/78/1f/49781fc9d14926d4bf74e6a58b1e7236.jpg" alt="image-6">
+                                <figcaption> Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </figcaption>
                             </figure>
                         </article>
                     </a>
@@ -92,8 +133,10 @@
                         <article>
                             <p></p>
                             <figure>
-                                <img src="https://placehold.it/480x360" alt="image-7">
-                                <figcaption>Post 7</figcaption>
+                                <img src="https://i.pinimg.com/236x/28/d4/2a/28d42a86f77d27a62bff8c111214d921.jpg" alt="image-7">
+                                <figcaption>
+                                    <b>  Open front home</b>
+                                </figcaption>
                             </figure>
                         </article>
                     </a>
@@ -101,8 +144,8 @@
                         <article>
                             <p></p>
                             <figure>
-                                <img src="https://placehold.it/480x360" alt="image-8">
-                                <figcaption>Post 8</figcaption>
+                                <img src="https://i.pinimg.com/564x/87/ee/1f/87ee1f17dca84eab79da4f943332f5a0.jpg" alt="image-8">
+                                <figcaption>via.com</figcaption>
                             </figure>
                         </article>
                     </a>
@@ -110,8 +153,8 @@
                         <article>
                             <p></p>
                             <figure>
-                                <img src="https://placehold.it/480x360" alt="image-9">
-                                <figcaption>Post 9</figcaption>
+                                <img src="https://i.pinimg.com/236x/79/18/2a/79182a39751516a9f3316da81d997801.jpg" alt="image-9">
+                                <figcaption>domain.com</figcaption>
                             </figure>
                         </article>
                     </a>
@@ -119,8 +162,8 @@
                         <article>
                             <p></p>
                             <figure>
-                                <img src="https://placehold.it/480x360" alt="image-10">
-                                <figcaption>Post 10</figcaption>
+                                <img src="https://i.pinimg.com/564x/9b/68/d1/9b68d1109fcc54b2b42cf376f2b79f02.jpg" alt="image-10">
+                                <figcaption>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</figcaption>
                             </figure>
                         </article>
                     </a>
@@ -128,8 +171,11 @@
                         <article>
                             <p></p>
                             <figure>
-                                <img src="https://placehold.it/480x460" alt="image-11">
-                                <figcaption>Post 11</figcaption>
+                                <img src="https://i.pinimg.com/236x/42/91/cc/4291cc7e3ee9729a4cbe00be67ddb5c8.jpg" alt="image-11">
+                                <figcaption><b> Grey minimal bedroom
+                                            _____________________________
+                                            domain.com
+                                </b></figcaption>
                             </figure>
                         </article>
                     </a>
@@ -137,42 +183,13 @@
                         <article>
                             <p></p>
                             <figure>
-                                <img src="https://placehold.it/480x340" alt="image-12">
-                                <figcaption>Post 12</figcaption>
+                                <img src="https://i.pinimg.com/236x/7d/1c/9d/7d1c9d6ef8620f8e68ff42cd2b4657b1.jpg" alt="image-12">
+                                <figcaption>via.com</figcaption>
                             </figure>
                         </article>
                     </a>
-                    <a href="#" title="Post 13">
-                        <article>
-                            <p>Culpa nihil aspernatur dolor deserunt accusantium id facilis libero in magnam neque. At explicabo voluptas eius?</p>
-                            <figure>
-                                <img src="https://placehold.it/480x380" alt="image-13">
-                                <figcaption>Post 13</figcaption>
-                            </figure>
-                        </article>
-                    </a>
+               
                 </main>
-                
-             
-          
-            <div class="sidebar">
-                <div class="sidebar-top">
-                    <p class="tittle">Colections</p>
-                </div>
-             
-                <div class="main-bar">
-                        <ul class="sidebar-main">
-                            <li><a href="">Architecture</a></li>
-                            <li><a href="">Design</a></li>
-                            <li><a href="">Products</a></li>
-                            <li><a href="">Minimal</a></li>
-                            <li><a href="">Autos</a></li>
-                            <li><a href="">Thechnology</a></li>
-                            <li><a href="">Photography</a></li>
-                        </ul>
-                    </div>
-
-            </div>
             
 
      </div>

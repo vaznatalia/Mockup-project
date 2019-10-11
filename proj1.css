@@ -1,96 +1,140 @@
 *{
-    text-decoration: none;
+text-decoration: none;
+padding: 0;
+margin: 0;
+font-family: 'Roboto' , sans-serif;
+box-sizing: border-box;
+/* general configuration*/
 }
-.container {
-    display: grid;
-    grid-template-areas:
-    "header header header sidenav"
-    "content content content sidenav"
-    "content content content sidenav"
-    "content content content sidenav"
-    "content content content sidenav";
-}
-header{
 
-    margin: 0;
-    padding: 0px;
-    
-    background-color: #2b2c36;
+header{
+margin: 0;
+padding: 0px;
+background-color: #2b2c36;
    
 }
 .clipboard{
-    font-size: 50px;
+font-size: 50px;
+margin-left: 60px;
+font-family: 'Muli', sans-serif;
+   
 }
 .navbar-top {
-    display: flex;
-    justify-content: space-between;
-    color:#c9c9cb;
-    width: 80%;
-    margin: 20px;
-    align-items: center;
+display: flex;
+justify-content: space-between;
+color:#c9c9cb;
+width: 80%;
+align-items: center;
+margin-top: 50px; 
     
    
 }
+#user-icon{
+  font-size: 50px;
+  width: 50px;
+   
+}
 .nav-user {
-    display: flex;
-    height: 10px;
+display: flex;
+align-content: center;
+align-items: center;
+height: 10px;
 
+}
+.spandiv{
+    margin: 0 1rem;
+    font-size: 20px;
 }
 .nav-links{
-    display: flex;
-    width: 40%;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px;
-    font-size: 20px;
-    align-content:
+display: flex;
+width: 60%;
+flex-direction: row;
+justify-content: space-between;
+font-size: 20px;
+padding-left: 62px;
+margin-top: 64px; 
+font-style: bold;   
 }
-
 .nav-links > a {
     color: #c9c9cb;
 }
-.grid-container {
+
+/*********HOVER************/
+
+.hov-bar-1:hover{
+  border-bottom: 3px solid aqua;
+}
+.hov-bar-2:hover{
+ border-bottom: 3px  solid aqua;     
+ width: 
+}
+#box-icon {
+display: flex;
+margin-top:30px;
+margin-right: 10px;
+
+}
+#bar-icon{
+display: flex;
+justify-content: center;
+margin-top: 30px;
+margin-right: 1034px;
+}
+#search-icon{
+display: inline-flex;
+padding: 30px;
+}
+.icons{
+ display:inline-flex;
+margin-left: 64px;
+}
+i:hover{
+    opacity: .5;
+}
+
+/******************GRID ESTRUTURE****************/
+
+.container {
     display: grid;
-    grid-gap: 10px;
-    border:1px solid black;
-    padding: 10px;
-    
-  }
+    grid-template-areas:
+    "header  header   header  sidenav"
+    "main    main     main    sidenav"
+    "main    main     main    sidenav"
+    "main    main     main    sidenav";
+}
+.masonry{
+grid-area: main;
+height:100%;
+}
  
-
-  .header {
-      grid-area: header;
-      border: 1px solid red;
-      height: 200px;
+.header {
+ grid-area: header;    
+ height: 200px;
   }
 
-  .content {
-      grid-area: content;
-      border: 1px solid blue;
-  }
-  .main-bar{
+ 
+.main-bar{
     background-color: #e2e2e2;
   }
 
-  .sidebar {
+.sidebar {
       grid-area: sidenav;
-      border: 1px solid green;
       display: grid;
       grid-template-rows: 200px auto;
+      text-align: end;
   }
 
-  .sidebar-top {
-      color: #fff;
-      height: 200px;
+.sidebar-top {
+      color: #c9c9cb;
       background-color: #1a1e24;
       display: flex; 
       justify-content: center;
+      padding: 10px;
+      font-size: 20px;
       align-items: flex-end;
 
-  }
-  
-
-  .sidebar-header{
+   }
+.sidebar-header{
       display: flex;
       height: 300px;
       background-color: #202229;
@@ -99,46 +143,56 @@ header{
       justify-content: center;
       margin: none;
     }
+ 
     
-    .title{
-        font-size: 25px;
-    }
-    .sidebar-main {
-     display: block;
+.sidebar-main {
+     display: flex;
+     flex-direction: column;
      margin:none;
      text-decoration: none;
      list-style: none;
     height: 100%;
     
     }
-    .sidebar-main a{
-        color:#aaacb1;
+.sidebar-main a{
+    color:#aaacb1;
+    display: flex;
     }
-    .sidebar-main ul{
-        margin:0,0,0,;
-        padding: 0,0,0,0;
+.sidebar-main a:hover{
+    color: #1a1e24;
+}
+.sidebar-main ul{
+     margin:20,0,0,;
+     padding:30px;
     }
-    .sidebar-main  li{
+.sidebar-main  li{
      display: flex;
      justify-content: center;
-     margin: 50px;
+     margin-top: 40px;
+     padding:1rem;
+     padding-left: 40px;
+     padding-right: 40px;
      border: none;
     }
-    body{
-        font: 1rem/1.6 "Helvetica", Sans-serif;
+   
+
     }
     
-    main{
+    /********************Masonry layout *****************************/
+    
+    body{
+        font: 1rem/1.6 "Helvetica", Sans-serif;
+    }main{
         width: 90%;
         margin:50px auto;
         
-        -moz-column-width: 220px;
-        -webkit-column-width: 220px;
-        column-width: 220px;
+        -moz-column-width: 120px;
+        -webkit-column-width: 120px;
+        column-width: 120px;
         
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
-        column-count: 3;
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
         
         -moz-column-gap: 20px;
         -webkit-column-gap: 20px;
@@ -150,6 +204,11 @@ header{
         width: 100%;
         height: auto;
         margin-top:1rem;
+    }
+    .{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
     }
     
     main a[title]{
@@ -174,22 +233,7 @@ header{
     }
    
     
-    
-  /* content */
-  .grid1 {
-    grid-area: content;
-    border: 1px solid red;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-}
- 
-     /* see grid auto auto*/ 
 
-  }
- 
- 
- 
  
  /*body, ul,li,p {
     margin: 0;
