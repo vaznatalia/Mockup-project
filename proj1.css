@@ -11,13 +11,12 @@ header{
 margin: 0;
 padding: 0px;
 background-color: #2b2c36;
-   
 }
 .clipboard{
 font-size: 50px;
 margin-left: 60px;
 font-family: 'Muli', sans-serif;
-   
+
 }
 .navbar-top {
 display: flex;
@@ -26,13 +25,13 @@ color:#c9c9cb;
 width: 80%;
 align-items: center;
 margin-top: 50px; 
-    
-   
+
+
 }
 #user-icon{
-  font-size: 50px;
-  width: 50px;
-   
+font-size: 50px;
+width: 50px;
+
 }
 .nav-user {
 display: flex;
@@ -42,8 +41,8 @@ height: 10px;
 
 }
 .spandiv{
-    margin: 0 1rem;
-    font-size: 20px;
+margin: 0 1rem;
+font-size: 20px;
 }
 .nav-links{
 display: flex;
@@ -52,21 +51,19 @@ flex-direction: row;
 justify-content: space-between;
 font-size: 20px;
 padding-left: 62px;
-margin-top: 64px; 
-font-style: bold;   
+margin-top: 36px; 
 }
 .nav-links > a {
-    color: #c9c9cb;
+color: #c9c9cb;
 }
 
 /*********HOVER************/
 
 .hov-bar-1:hover{
-  border-bottom: 3px solid aqua;
+border-bottom: 3px solid aqua;
 }
 .hov-bar-2:hover{
- border-bottom: 3px  solid aqua;     
- width: 
+border-bottom: 3px  solid aqua;     
 }
 #box-icon {
 display: flex;
@@ -85,225 +82,139 @@ display: inline-flex;
 padding: 30px;
 }
 .icons{
- display:inline-flex;
+display:inline-flex;
 margin-left: 64px;
 }
 i:hover{
-    opacity: .5;
+opacity: .5;
 }
 
 /******************GRID ESTRUTURE****************/
 
 .container {
-    display: grid;
-    grid-template-areas:
-    "header  header   header  sidenav"
-    "main    main     main    sidenav"
-    "main    main     main    sidenav"
-    "main    main     main    sidenav";
+display: grid;
+grid-template-areas:
+"header  header   header  sidenav"
+"main    main     main    sidenav"
+"main    main     main    sidenav"
+"main    main     main    sidenav";
 }
 .masonry{
 grid-area: main;
 height:100%;
 }
- 
-.header {
- grid-area: header;    
- height: 200px;
-  }
 
- 
+.header {
+grid-area: header;    
+height: 200px;
+}
+
+
 .main-bar{
-    background-color: #e2e2e2;
-  }
+background-color: #e2e2e2;
+}
 
 .sidebar {
-      grid-area: sidenav;
-      display: grid;
-      grid-template-rows: 200px auto;
-      text-align: end;
-  }
+grid-area: sidenav;
+display: grid;
+grid-template-rows: 200px auto;
+text-align: end;
+}
 
 .sidebar-top {
-      color: #c9c9cb;
-      background-color: #1a1e24;
-      display: flex; 
-      justify-content: center;
-      padding: 10px;
-      font-size: 20px;
-      align-items: flex-end;
+color: #c9c9cb;
+background-color: #1a1e24;
+display: flex; 
+justify-content: center;
+padding: 10px;
+font-size: 20px;
+align-items: flex-end;
 
-   }
+}
 .sidebar-header{
-      display: flex;
-      height: 300px;
-      background-color: #202229;
-      color:#c9c9cb;
-      align-items: flex-end;
-      justify-content: center;
-      margin: none;
-    }
- 
-    
-.sidebar-main {
-     display: flex;
-     flex-direction: column;
-     margin:none;
-     text-decoration: none;
-     list-style: none;
-    height: 100%;
-    
-    }
+display: flex;
+height: 300px;
+background-color: #202229;
+color:#c9c9cb;
+align-items: flex-end;
+justify-content: center;
+margin: 0;
+}
+
+
+.sidebar-main{
+display: flex;
+flex-direction: column;
+margin:0;
+text-decoration: none;
+list-style: none;
+height: 100%;
+
+}
 .sidebar-main a{
-    color:#aaacb1;
-    display: flex;
-    }
+color:#aaacb1;
+display: flex;
+}
 .sidebar-main a:hover{
-    color: #1a1e24;
+color: #1a1e24;
 }
 .sidebar-main ul{
-     margin:20,0,0,;
-     padding:30px;
-    }
-.sidebar-main  li{
-     display: flex;
-     justify-content: center;
-     margin-top: 40px;
-     padding:1rem;
-     padding-left: 40px;
-     padding-right: 40px;
-     border: none;
-    }
-   
-
-    }
-    
-    /********************Masonry layout *****************************/
-    
-    body{
-        font: 1rem/1.6 "Helvetica", Sans-serif;
-    }main{
-        width: 90%;
-        margin:50px auto;
-        
-        -moz-column-width: 120px;
-        -webkit-column-width: 120px;
-        column-width: 120px;
-        
-        -moz-column-count: 4;
-        -webkit-column-count: 4;
-        column-count: 4;
-        
-        -moz-column-gap: 20px;
-        -webkit-column-gap: 20px;
-        column-gap: 20px;
-        
-    }
-    
-    a[title] figure img{
-        width: 100%;
-        height: auto;
-        margin-top:1rem;
-    }
-    .{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-    
-    main a[title]{
-        text-decoration: none;
-        padding: 1rem;
-        color:#424242;
-        box-shadow: 0 1px 3px rgba(0,0,0, .12), 0 1px 2px rgba(0,0,0, .24);
-        display: inline-block;
-        
-        margin-bottom:20px;
-        
-        transition: all .3s cubic-bezier(0.25, .8, .25, 1);
-    }
-    
-    main:hover a[title]:not(:hover){
-        opacity: .6;
-    }
-    
-    a[title]:hover{
-        box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .20);
-        
-    }
-   
-    
-
- 
- /*body, ul,li,p {
-    margin: 0;
-    padding: 0px;
-    list-style: none;
-    font-size:100%;
-    font-family: 'Open Sans', sans-serif;
-    width: 100%;
-    height:100%;
-    
+margin:20px 0 0 0;
+padding:30px;
 }
-a {
-    color: 	#c9c9cb;
-    text-decoration: none;
-
-}
-.titleclip {
-height: 50px;
- padding: 20px;
- justify-content: flex-stat;
-
-}
-.header{
-    display: flex;
-    background: #2b2c36;
-    flex-wrap: wrap;
-    padding: 20px;
-    top: 0%;
-    
-
-}
-
-
-.menu2{
-    display: flex;
-    margin-left: 10px;
-    
-
-}
-.menu2 li {
-    margin-left: 10px;
-    align-content: flex-end;
-    justify-content: space-between;
-    margin:  25px;
-
-
-}
-.menu2 li a {
-    display: flex;
-    padding: 10px;
-    flex-wrap: nowrap;
-    
-    
-    
-}
-.menu1 {
+.sidebar-main li{
 display: flex;
-justify-content:flex-end;
-flex-flow: row;
-padding: 25px;
-
-
+justify-content: center;
+margin-top: 40px;
+padding:1rem;
+padding-left: 40px;
+padding-right: 40px;
+border: none;
 }
-.icons{
-margin-top: 30px;
-justify-content:flex-start;
-float: right;
 
+
+/********************Masonry layout *****************************/
+
+body{
+font: 1rem/1.6 "Helvetica", Sans-serif;
 }
-.search-icon {
-    justify-content: flex-end;
+main{
+width: 90%;
+margin:50px auto;
 
+-moz-column-width: 120px;
+-webkit-column-width: 120px;
+column-width: 120px;
+
+-moz-column-count: 4;
+-webkit-column-count: 4;
+column-count: 4;
+
+-moz-column-gap: 20px;
+-webkit-column-gap: 20px;
+column-gap: 20px;
+}
+
+a[title] figure img{
+width: 100%;
+height: auto;
+margin-top:1rem;
+}
+
+main a[title]{
+text-decoration: none;
+padding: 1rem;
+color:#424242;
+box-shadow: 0 1px 3px rgba(0,0,0, .12), 0 1px 2px rgba(0,0,0, .24);
+display: inline-block;
+margin-bottom:20px;
+transition: all .3s cubic-bezier(0.25, .8, .25, 1);
+}
+
+main:hover a[title]:not(:hover){
+opacity: .6;
+}
+
+a[title]:hover{
+box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .20);   
 }
